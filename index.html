@@ -357,7 +357,7 @@ body::-webkit-scrollbar {
 }
 
 .showcase-spacing-ajax-agent {
-    height: 10px;
+    height: 100px;
 }
 
 #cs {
@@ -546,6 +546,10 @@ body::-webkit-scrollbar {
     font-size: 1.5em; /* Smaller description */
 }
 
+
+.showcase-spacing-ajax-agent-junes {
+    height: 40px;
+}
         
     </style>
 </head>
@@ -639,7 +643,44 @@ body::-webkit-scrollbar {
     </center>
 
     
+ <div id="pjt">
+            <div class="left-btn-con"><button id="left-mover" onclick="moveSlide(-1)"><i class="fas fa-angle-left"></i></button></div>
 
+                    <div class="showcase-library">
+
+                        <div class="showcase-library">
+                            <div id="showcase-main-ajax"
+
+                            
+                                data-title1="Vulcan dashboard" 
+                                data-description1="A costumized web dashboard with necessary shortcuts and tools, designed to  boost productivity and for maximum focus. It has both Dark and Light user interface themes, and also a inbuilt SoundCloud music player (made with html5, css3, js) "
+                                data-link1="#pjt"
+                                data-title2="Web weather App"
+                                data-description2="A weather forcasting app based on data from OpenWeather, it lets you know weather forcast and current conditions of city/location provided by user (Made with html5, css3, js, and uses OpenWeather API)"
+                                data-link2="#pjt"
+                                data-title3="To-do app"
+                                data-description3="A basic task listing web tool which lets you add, check, delete tasks. it will anayse your task and other detail to give you your productivity score or task-completion ration etc,, (made with html5, css3, js)"
+                                data-link3="#pjt"
+                                data-title4="Basic timer"
+                                data-description4="A basic timer which lets you assign specific amount of time to a task like '25 minutes assigned for email check' it will notify user when timer is about to end or let user customize notifation settings (Made with html5, css3, js)"
+                                data-link4="#pjt">
+
+                                <div class="showcase-spacing-ajax-agent"></div>
+                            <div id="showcase-title"></div>
+                            <div class="showcase-spacing-ajax-agent-junes"></div>
+                            <div id="showcase-description"></div>
+                            <a id="showcase-link" >All the projects are ready and will be live soon</a>
+                            </div>
+                    
+                            
+                        </div>
+
+                    </div>
+
+            <div class="left-btn-con"><button id="right-mover" onclick="moveSlide(1)"><i class="fas fa-angle-right"></i> </button></div>
+
+    </center>
+    <div class="pagers-sapce-vert-definers"></div>
     
 
     
@@ -718,33 +759,38 @@ let currentIndex = 0;
 function updateBackground() {
     const showcaseMainAjax = document.getElementById('showcase-main-ajax');
     const titleElement = document.getElementById('showcase-title');
+    const descriptionElement = document.getElementById('showcase-description');
+    const linkElement = document.getElementById('showcase-link');
     
-    // Get the current image and title from the data attributes
-    const imageKey = `data-image${currentIndex + 1}`;
+    // Get the current title, description, and link from the data attributes
     const titleKey = `data-title${currentIndex + 1}`;
+    const descriptionKey = `data-description${currentIndex + 1}`;
+    const linkKey = `data-link${currentIndex + 1}`;
     
-    const imageUrl = showcaseMainAjax.getAttribute(imageKey);
     const titleText = showcaseMainAjax.getAttribute(titleKey);
+    const descriptionText = showcaseMainAjax.getAttribute(descriptionKey);
+    const linkUrl = showcaseMainAjax.getAttribute(linkKey);
     
-    // Fade out the title first
+    // Fade out the title and description first
     titleElement.style.opacity = 0;
+    descriptionElement.style.opacity = 0;
     
-    // After the title fades out, change the background image
+    // After the title fades out, update the title, description, and link
     setTimeout(() => {
-        showcaseMainAjax.style.backgroundImage = `url(${imageUrl})`;
-        
-        // Update the title text
         titleElement.textContent = titleText;
+        descriptionElement.textContent = descriptionText;
+        linkElement.href = linkUrl;  // Update the link
         
-        // Fade the title back in
+        // Fade the title and description back in
         setTimeout(() => {
             titleElement.style.opacity = 1;
-        }, 100); // Small delay to sync the title fade-in after background image change
-    }, 300); // Delay before changing the background image to allow title fade-out
+            descriptionElement.style.opacity = 1;
+        }, 100); // Small delay to sync the fade-in after content change
+    }, 300); // Delay before changing the content to allow fade-out
 }
 
 function moveSlide(direction) {
-    const totalSlides = 4; // You have 4 images, so the total count is 4
+    const totalSlides = 4; // You have 4 projects, so the total count is 4
 
     currentIndex += direction;
 
@@ -757,9 +803,20 @@ function moveSlide(direction) {
     updateBackground();
 }
 
-// Initialize the first image
+// Initialize the first project details
 updateBackground();
 
+
+
+
+
+
+
+
+
+
+
+    
 
 
 function loadSpotify() {
