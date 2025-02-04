@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+    <link rel="icon" href="https://i.pinimg.com/236x/d8/1f/67/d81f672b40aa49dfe039c81f16b94dc0.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+    background-color: black;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.left-vert{
+    width: 40px;
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    font-size:large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.in-mids {
+    width: 45px;
+}
+
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    
+    border-radius: 12px;
+    height: 50px;
+    background-color:#000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    font-size:xx-large;
+    font-weight: 700;
+    width:100%;
+
+}
+
+.definers {
+    height:100px;
+}
+
+
+#home {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    height: 500px;
+    width: 95%;
+    border-radius: 12px;
+    background-color: #121212;
+}
+
+.pfp {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 180px;
+    width: 90%;
+    background-color: transparent;
+}
+
+.ajax-definer {
+    width: 0;
+}
+
+.pfp-ajax {
+    margin-top: 40px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(https://i.pinimg.com/236x/d8/1f/67/d81f672b40aa49dfe039c81f16b94dc0.jpg    );
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.name-con {
+    margin-top:30px;
+    align-items: center;
+    height: 40px;
+    width: 400px;
+    background-color: transparent;
+    font-size: xx-large;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+.in-mid-vert-space{
+    height:60px;
+}
+
+.intro {
+    height: 200px;
+    width: 95%;
+    background-color: transparent;
+    font-size: medium;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+
+#intro-ajax {
+    text-align: left;
+    padding-left: 45px;
+    font-size: xx-large    ;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.cta-con {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height:200px;
+    width: 90%;
+    background-color:transparent;
+}
+
+
+
+.cons-space-definer {
+    width: 20px;
+}
+
+
+#EthernalX {
+    height: 50px;
+    width: 180px;
+    background-color: #1de740;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 21px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#EthernalX:hover {
+    height: 55px;
+    width: 185px;
+    border-radius: 21px;
+    
+
+}
+
+
+
+
+
+.con-in-mid-space-definer {
+    width: 40px;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #555; 
+    border-radius: 10px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+
+
+.pagers-sapce-vert-definers {
+    height: 100px;
+    width: 99%;
+    background-color: transparent;
+}
+
+
+#Abt {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 90%;
+    background-color: transparent;
+}
+
+.abt-head{
+    display: flex;
+    height: 100px;
+    width: 99%;
+    font-size: x-large;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: transparent;/*Backdround colour of divs aregivem transperant, so later it can be tested to set visual alignments*/
+}
+
+
+#abt-ajax-text {
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: left;
+    font-size: large;
+    user-select:none ;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.in-mid-para-spacer {
+    user-select: none;
+    height: 30px;
+}
+
+
+#pjt {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 90%;
+    background-color: #121212;
+    border-radius: 12px;
+}
+
+#pjt-ajax-hydra {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 99%;
+    font-size: x-large;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: transparent;/*Background colour of divs are given transperant, so later it can be tested to set visual alignments*/
+}
+
+
+.hydra-spacer {
+    width: 70px;
+}
+
+
+.pagers-sapce-vert-definers-specials {
+    height: 50px;
+}
+
+.left-btn-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 20%;
+    background-color: transparent;
+}
+
+#left-mover {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#right-mover {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+
+}
+
+#left-mover:hover {
+    cursor: pointer;
+    
+    
+}
+
+#right-mover:hover {
+    cursor: pointer;
+}
+
+
+.showcase-library {
+    height: 500px;
+    width: 60%;
+     display: flex;
+     flex-direction:column ;
+     align-items: center;
+     justify-content: center;
+    
+}
+
+
+#showcase-main-ajax {
+    height: 450px;
+    width: 800px;
+    border-radius: 10px;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: background-image 0.7s ease;
+}
+
+#showcase-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacitu 0.7s ease;
+}
+
+.showcase-spacing-ajax-agent {
+    height: 10px;
+}
+
+#cs {
+    display: flex;
+    
+    
+    flex-direction: column;
+    height: 950px;
+    width: 90%;
+    border-radius: 12px;
+    background-color: #121212;
+}
+
+
+.cs-major-header {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    padding-top: 10px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    padding-left: 60px;
+}
+
+.upcoming-ajax-showcase {
+    display: flex;
+    height: 400px;
+    width: 600px;
+    border-radius: 12px;
+    background-color: transparent;
+    margin-left: 60px;
+    background-image: url('https://i1.sndcdn.com/visuals-6AzV4v2dgizz5BUR-qrysBA-t1240x260.jpg'); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid #fff;
+    transition: background-size 0.8s ease-in-out; 
+}
+
+
+
+
+
+.post-major-header-vert {
+    height: 60px;
+    width: 99%;
+}
+
+.showcace-rowmaker {
+    display: flex;
+    flex-direction: row;
+}
+
+.showcase-row-space-ajax-agent {
+    width: 80px;
+}
+
+.info-ajax {
+    height: 400px;
+    width: 400px;
+    margin-left: 300px;
+    background-color: transparent;
+    
+}
+
+#summary {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hostinger-space-definer {
+    height: 80px;
+}
+
+.embed-loader {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 90%;
+    margin-left: 50px;
+    background-color: transparent;
+}
+
+.input-stotage {
+    display: flex;
+}
+
+#spotify-link {
+    height: 50px;
+    width: 800px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: #000;
+    font-weight: bold;
+}
+
+
+#Searchers {
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+.input-horizontal-ajax-spacing-aget {
+    width: 30px;
+}
+
+.iam-rummimg-out-of-names {
+    height: 50px;
+}
+
+#embed-container iframe {
+    height: 300px;
+    width: 99%;
+    border: none;
+    background-color: transparent;
+}
+
+#cnt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 92%;
+    background-color: #121212;
+    margin-left: 50px;
+    border-radius: 12px;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sapcers-ajax {
+    width: 10px;
+}
+
+.ajax-contatc-spacing {
+    width: 100px;
+}
+    </style>
+</head>
+<body>
+    <center>
+    
+
+        <div class="nav">
+                <div class="left-vert"></div>
+        
+            <a href="#home"><i class="fas fa-home"></i></a>
+                <div class="in-mids"></div>
+             <a href="#Abt">About me</a>    
+                <div class="in-mids"></div>
+            <a href="#cs">Upcoming projects</a>
+                <div class="in-mids"></div>
+            <a href="#cnt">Contact</a>
+        </div>
+
+        <div class="definers"></div>
+
+        <div id="home">
+            <div class="pfp">
+
+                <!-- pfp sturture-->
+                    <div class="ajax-definer"></div>
+                <div class="pfp-ajax" draggable="false"></div>
+                
+
+
+                 <!-- Alias-->
+            <div class="Ajax-alias">
+                
+                <div class="name-con"> Hello! I'm Taskstalker,</div>
+            
+            </div>
+
+
+
+
+             </div>
+
+             <div class="in-mid-vert-space"></div>
+
+             <div class="intro">
+                
+                <p id="intro-ajax">A passionate web developer and designer, building creative & functional web experiences </p>
+            </div>
+
+        
+
+            <div class="cta-con">
+                <div class="cons-space-definer"></div>
+                    <a href="#pjt"><button id="EthernalX">View my work</button></a>
+
+
+                <div class="con-in-mid-space-definer"></div>
+
+                    <a href="#cnt"><button id="EthernalX">Contact me </button></a>
+        </div>
+
+
+        
+
+    </center>
+
+    <div class="pagers-sapce-vert-definers"></div>
+
+
+    <center>
+        <div id="Abt">
+
+
+                <div class="abt-head">About me</div>
+
+                <p id="abt-ajax-text">  Hi! I'm Taskstalker, an active web developer and designer passionate about creating innovative and high-performance web applications. I have worked on multiple projects, including solo endeavors, focusing on user-friendly interfaces, creative designs, and optimized performance. My passion for technology and continuous learning pushes me further in this field every day   </p><br>
+                <div class="in-mid-para-spacer"></div>
+                <p id="abt-ajax-text">I am always expanding my knowledge of web technologies, front-end frameworks, JavaScript, and backend databases. Beyond coding, I enjoy experimenting with animations and bringing creative ideas to life.</p>
+                <div class="in-mid-para-spacer"></div>
+                <p id="abt-ajax-text">    My goal is to refine my skills and deliver high-quality web solutions that blend functionality with design. I strive to create groundbreaking projects by combining my technical expertise with creativity, leveraging the limitless possibilities of technology.    </p>
+
+
+
+
+
+        </div>
+    </center>
+
+    
+
+    
+
+    
+
+
+    <div id="pjt-ajax-hydra">
+        <div class="hydra-spacer"></div>
+        Upcoming Project
+    </div>
+
+    <center>
+
+
+        <div id="cs">
+            <div class="cs-major-header">StreamCore</div>
+                    <div class="post-major-header-vert"></div>
+
+                    <div class="showcace-rowmaker">
+                            
+                                <div class="showcase-row-space-ajax-agent"></div>
+
+                                <div class="info-ajax">
+                                    <p id="summary">StreamCore project is a compact web based music streaming platform which runs on Spottify embeds, once fully developed it will have all the features just like any other music platform.  </p>
+
+                                    <p id="summary">This platform will be hosted completely free off cost if everything plays out smoothly, </p>
+
+                                    <p id="summary">Still curious? Below you can test a little priview of the platform, and experience how it will work</p>
+                                </div>
+                    </div>
+
+                    <div class="hostinger-space-definer"></div>
+
+
+                    <div class="embed-loader">
+                        <div class="input-stotage">
+                            <input type="text" id="spotify-link" placeholder="Paste Spotify song/playlist link here">
+                                <div class="input-horizontal-ajax-spacing-aget"></div>
+                            <button  id="Searchers"       onclick="loadSpotify()">Load Playlist/Song</button>
+                        </div>
+
+                            <div class="iam-rummimg-out-of-names"></div>
+                        <div id="embed-container"></div>
+                    </div>
+        </div>
+
+        </center>
+        <div class="pagers-sapce-vert-definers"></div>
+
+        <Ceneter>
+            <div id="cnt">
+
+                
+
+                Contact me on
+
+                <div class="ajax-contatc-spacing"></div>
+                
+                <div class="discord"><i class="fab fa-discord"></i></div><div class="sapcers-ajax"></div>sosukeaizen0122
+
+                <div class="ajax-contatc-spacing"></div>
+
+
+               <div class="discord"> <a href="https://github.com/MioJoester"><i class="fab fa-github"></i></div><div class="sapcers-ajax"></div>MioJoester</a>
+            </div>
+        </Ceneter>
+</body>
+
+
+
+
+<script>
+
+
+let currentIndex = 0;
+
+function updateBackground() {
+    const showcaseMainAjax = document.getElementById('showcase-main-ajax');
+    const titleElement = document.getElementById('showcase-title');
+    
+    // Get the current image and title from the data attributes
+    const imageKey = `data-image${currentIndex + 1}`;
+    const titleKey = `data-title${currentIndex + 1}`;
+    
+    const imageUrl = showcaseMainAjax.getAttribute(imageKey);
+    const titleText = showcaseMainAjax.getAttribute(titleKey);
+    
+    // Fade out the title first
+    titleElement.style.opacity = 0;
+    
+    // After the title fades out, change the background image
+    setTimeout(() => {
+        showcaseMainAjax.style.backgroundImage = `url(${imageUrl})`;
+        
+        // Update the title text
+        titleElement.textContent = titleText;
+        
+        // Fade the title back in
+        setTimeout(() => {
+            titleElement.style.opacity = 1;
+        }, 100); // Small delay to sync the title fade-in after background image change
+    }, 300); // Delay before changing the background image to allow title fade-out
+}
+
+function moveSlide(direction) {
+    const totalSlides = 4; // You have 4 images, so the total count is 4
+
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
+
+    updateBackground();
+}
+
+// Initialize the first image
+updateBackground();
+
+
+
+function loadSpotify() {
+    const spotifyLink = document.getElementById('spotify-link').value;
+    const embedContainer = document.getElementById('embed-container');
+
+    console.log("Entered Spotify URL:", spotifyLink); // Debugging line
+
+    // Refined regex to match Spotify track, playlist, and album URLs reliably
+    const spotifyRegex = /^(https:\/\/open.spotify.com)\/(track|playlist|album)\/([a-zA-Z0-9]{22})/;
+
+    // Check if the entered URL matches the pattern and log the match result
+    const match = spotifyLink.match(spotifyRegex);
+
+    console.log("Regex match result:", match); // Debugging line
+
+    // Test if we have a valid match
+    if (match) {
+        console.log("Valid Spotify URL!"); // Debugging line
+
+        const type = match[2];  // track, playlist, or album
+        const id = match[3];    // track, playlist, or album ID
+
+        console.log("Type:", type); // Debugging line
+        console.log("ID:", id); // Debugging line
+
+        // Generate the embed URL based on type (song, playlist, or album)
+        const embedUrl = `https://open.spotify.com/embed/${type}/${id}`;
+
+        // Create the iframe element dynamically
+        const iframe = document.createElement('iframe');
+        iframe.src = embedUrl;
+        iframe.allow = 'encrypted-media';  // Required to allow the Spotify embed
+        iframe.title = 'Spotify Embed';
+        iframe.width = "100%";  // Make iframe responsive to the parent container's width
+        iframe.height = "300"; // Optional: define height of the iframe
+
+        // Clear any previous embeds
+        embedContainer.innerHTML = '';
+
+        // Add the new iframe to the container
+        embedContainer.appendChild(iframe);
+
+        // Debugging: Check if the iframe is created and added
+        console.log("Iframe created and added:", iframe);
+    } else {
+        console.log("Invalid Spotify URL!"); // Debugging line
+        alert('Please enter a valid Spotify song, album, or playlist link.');
+    }
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>
