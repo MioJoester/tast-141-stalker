@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>TaskStalker</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +15,6 @@
 
 
 }
-
-    
-
 
 html {
     scroll-behavior: smooth;
@@ -93,8 +89,8 @@ a {
 
 .pfp-ajax {
     margin-top: 40px;
-    height: 230px;
-    width: 230px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     background-image: url(https://i.pinimg.com/236x/d8/1f/67/d81f672b40aa49dfe039c81f16b94dc0.jpg    );
     background-repeat: no-repeat;
@@ -134,7 +130,7 @@ a {
 
 #intro-ajax {
     text-align: left;
-    padding-left: 50px;
+    padding-left: 45px;
     font-size: xx-large    ;
     color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -350,7 +346,7 @@ body::-webkit-scrollbar {
 #showcase-title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
-    font-size: large;
+    font-size: xx-large;
     font-weight: bold;
     opacity: 0;
     transition: opacitu 0.7s ease;
@@ -516,50 +512,28 @@ body::-webkit-scrollbar {
 .ajax-contatc-spacing {
     width: 100px;
 }
-/* Full-screen overlay */
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000; /* Semi-transparent dark background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Ensure it's above all other content */
-    color: white; /* Text color */
-}
 
-/* Centered message content */
-.overlay-content {
-    text-align: center;
+
+#showcase-description {
+    color: #fff;
+    height: 200px;
+    width: 400px;
+    background-color: transparent;
+    text-align: left;
     font-size: large;
-}
-
-.overlay-content h1 {
-    margin: 0;
-    font-size: x-large; /* Large title */
-}
-
-.overlay-content p {
-    font-size: 1.5em; /* Smaller description */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 
 .showcase-spacing-ajax-agent-junes {
     height: 40px;
 }
-        
     </style>
 </head>
 <body>
-
-    <!-- Place this inside the <body> tag of your HTML file, preferably at the top of the content -->
-
-
     <center>
-   
+    
 
         <div class="nav">
                 <div class="left-vert"></div>
@@ -567,6 +541,8 @@ body::-webkit-scrollbar {
             <a href="#home"><i class="fas fa-home"></i></a>
                 <div class="in-mids"></div>
              <a href="#Abt">About me</a>    
+             <div class="in-mids"></div>
+            <a href="#pjt">My projects</a>
                 <div class="in-mids"></div>
             <a href="#cs">Upcoming projects</a>
                 <div class="in-mids"></div>
@@ -607,7 +583,7 @@ body::-webkit-scrollbar {
 
             <div class="cta-con">
                 <div class="cons-space-definer"></div>
-                   
+                    <a href="#pjt"><button id="EthernalX">View my work</button></a>
 
 
                 <div class="con-in-mid-space-definer"></div>
@@ -640,10 +616,19 @@ body::-webkit-scrollbar {
 
 
         </div>
+      
     </center>
 
-    
- <div id="pjt">
+
+
+    <div id="pjt-ajax-hydra">
+        <div class="hydra-spacer"></div>
+          My Projects
+    </div>
+
+    <center>
+
+        <div id="pjt">
             <div class="left-btn-con"><button id="left-mover" onclick="moveSlide(-1)"><i class="fas fa-angle-left"></i></button></div>
 
                     <div class="showcase-library">
@@ -681,6 +666,10 @@ body::-webkit-scrollbar {
 
     </center>
     <div class="pagers-sapce-vert-definers"></div>
+
+
+    
+
     
 
     
@@ -735,8 +724,7 @@ body::-webkit-scrollbar {
                 
 
                 
-
-                
+              
                 
                 <div class="discord"><i class="fab fa-discord"></i></div><div class="sapcers-ajax"></div>sosukeaizen0122
 
@@ -816,7 +804,22 @@ updateBackground();
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function loadSpotify() {
