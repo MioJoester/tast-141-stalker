@@ -512,30 +512,51 @@ body::-webkit-scrollbar {
 .ajax-contatc-spacing {
     width: 100px;
 }
+/* Full-screen overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above all other content */
+    color: white; /* Text color */
+}
 
-        .maintain-lol {
-            height:100%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            width:100%;
-            z-index:9999;
-            background-color:#000;
-            
-            
-        }
+/* Centered message content */
+.overlay-content {
+    text-align: center;
+    font-size: 2em;
+}
 
-        #Update-coming {
-             color:#fff;
-             font-size: large;   
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight: bold;
-        }
+.overlay-content h1 {
+    margin: 0;
+    font-size: 3em; /* Large title */
+}
+
+.overlay-content p {
+    font-size: 1.5em; /* Smaller description */
+}
+
+        
     </style>
 </head>
 <body>
+
+    <!-- Place this inside the <body> tag of your HTML file, preferably at the top of the content -->
+<div id="overlay">
+    <div class="overlay-content">
+        <h1>Site Under Routine Check</h1>
+        <p>Please check back later.</p>
+    </div>
+</div>
+
     <center>
-    <div class="maintain-lol"> <p id="Update-coming"> :/ Sites under maintenance </p></div>
+   
 
         <div class="nav">
                 <div class="left-vert"></div>
